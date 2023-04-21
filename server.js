@@ -2,7 +2,7 @@ const net = require('net');
 
 const server = net.createServer(con => {
     con.write('He recibido una conexión');
-    console.log('-------connection-------');
+    console.log('-------conexión-------');
     con.pipe(con);
 });
 
